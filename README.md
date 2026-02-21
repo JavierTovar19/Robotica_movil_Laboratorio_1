@@ -11,18 +11,23 @@
     - **Solución planteada:**
     Para resolver el reto planteado, se implementa un codigo que realiza un avance por dos segundos, luego se detiene y regresa por dos segundos, despues de esto se repite el proceso con un avance de 4 segundos.
     - **Diagrama de flujo:**
-    ![Diagrama de flujo](./img/imagen.jpeg)
+    El flujo del programa se plantea de forma secuencial, en la siguiente imagen:
+    ![Diagrama de flujo Punto 1](./img/flujo_1.png)
     - **Pista:**
     - **Imagenes:**
-    - **Codigo de bloque:**
+    - **Codigo de bloques:**
+    ![Codigo de bloques Punto 1](./img/bloques_1.png)
     - **Resultados:**
  - ### Reto 2: 
-    - **Objetivo:**
+    - **Objetivo:** Usar el encoder de los motores para contar las revoluciones de las ruedas y avanzar en linea recta hasta completar 8 revoluciones.
     - **Solución planteada:**
-    - **Diagrama de flujo:**
+    Para resolver el reto planteado, se implementa un codigo que realiza un avance constante dentro de un bucle, el cual evalua el numero de revoluciones de las ruedas y se detiene cuando alcanza o supera las 8 revoluciones * Se añade una pausa al inicio para poder colocar el robot en la posicion deseada y que este pueda avanzar en linea recta *.
+    - **Diagrama de flujo:** El diagrama de flujo, es simplemente un ciclo con una condicion de parada.
+    ![Diagrama de flujo Punto 2](./img/flujo_2.png)
     - **Pista:**
     - **Imagenes:**
-    - **Codigo de bloque:**
+    - **Codigo de bloques:**
+    ![Codigo de bloques Punto 2](./img/bloques_2.png)
     - **Resultados:**
  - ### Reto 3: 
     - **Objetivo:**
