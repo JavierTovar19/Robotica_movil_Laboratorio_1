@@ -24,9 +24,9 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     Para resolver el reto planteado, se implementa un codigo que realiza un avance por dos segundos, luego se detiene y regresa por dos segundos, despues de esto se repite el proceso con un avance de 4 segundos.
     - **Diagrama de flujo:**
     El flujo del programa se plantea de forma secuencial, en la siguiente imagen:
-    ![Diagrama de flujo Punto 1](./img/flujo_1.png)
+    ![Diagrama de flujo Punto 1](./img/Actividad_1/flujo_1.png)
     - **Codigo de bloques:**
-    ![Codigo de bloques Punto 1](./img/bloques_1.png)
+    ![Codigo de bloques Punto 1](./img/Actividad_1/bloques_1.png)
     - **Resultados:** Dadas las condiciones del MRU, podemos entender que la distancia recorrida será proporcional al tiempo y ello se observa en la escala de distancia obtenida al escalar el tiempo.
   
       
@@ -36,10 +36,10 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     Para resolver el reto planteado, se implementa un codigo que realiza un avance constante dentro de un bucle, el cual evalua el numero de revoluciones de las ruedas y se detiene cuando alcanza o supera las 8 revoluciones * Se añade una pausa al inicio para poder colocar el robot en la posicion deseada y que este pueda avanzar en linea recta *.
     - **Diagrama de flujo:** El diagrama de flujo, es simplemente un ciclo con una condicion de parada.
       
-    ![Diagrama de flujo Punto 1](./img/flujo_2.png)
+    ![Diagrama de flujo Punto 2](./img/Actividad_1/flujo_2.png)
    
     - **Codigo de bloques:**
-    ![Codigo de bloques Punto 1](./img/bloques_2.png)
+    ![Codigo de bloques Punto 2](./img/Actividad_1/bloques_2.png)
    
     - **Resultados:** 2 * pi * 8rev * 28mm_radio = 1,4 metros de avance. En la realidad se obtuvo un acercamiento importante a este valor teórico, esto gracias a la tecnologia de visualización/conteo de pulsos     magneticos obtenidos desde encoder que permiten conocer las revoluciones dadas.
 
@@ -47,8 +47,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Objetivo:** Usar el sensor ultrasónico para detener un movimiento de línea recta cuando se detecte un obstáculo a 10cm de distancia.
     - **Solución planteada:** Dentro de un ciclo while se evalua la condicion del sensor de distancia ultrasónico y se ordena la parada cuando se cumpla.
     - **Diagrama de flujo:** El diagrama de flujo, es simplemente un ciclo con una condicion de parada.
+   ![Diagrama de flujo Punto 3](./img/Actividad_1/flujo_3_ultrasonido.png)
+
     - **Codigo de bloques:**
-    - **Resultados:** Diferencias entre medición del sensor y el flexómetro a dos distancias distintas: (REAL=9cm y sensor=9,5cm Potencia=10) (REAL=7cm y sensor=6,7cm Potencia=50). Como se observa, el sensor siempre tendrá una incertidumbre importante y más cuando no se tiene un control directo sobre la inercia del vehículo.
+    ![Codigo de bloques Punto 2](./img/Actividad_1/bloques_3_ultrasonido.png)
+    - **Resultados:** El sistema está configurado para detener el vehículo cuando el sensor detecta una distancia menor a 10 cm; sin embargo, la detención no es instantánea debido a la inercia. Cuando el carro se mueve con baja potencia, su velocidad y energía cinética son menores, por lo que al activarse la señal de parada avanza muy poco adicionalmente y se detiene cerca de los 9–10 cm reales. En cambio, a mayor potencia el vehículo alcanza mayor velocidad y, por tanto, mayor inercia; aunque el sensor detecte los 10 cm y envíe la orden de detenerse, el carro continúa avanzando unos centímetros más antes de frenar por completo, terminando más cerca del obstáculo (aproximadamente 6,5–7 cm).
 
   
 ## Actividad 2:
