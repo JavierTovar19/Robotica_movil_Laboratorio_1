@@ -75,7 +75,7 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
 ## Actividad 3:
   - ### Reto:
     - **Objetivo:** Usar el girosensor para generar un movimiento en línea recta que en cierto momento cambie su dirección en 45 y 135 grados. 
-    - **Solución planteada:**
+    - **Solución planteada:** Se programa el robot para que avance tres revoluciones inicialmente, luego dentro de un bucle se da giro y se evalua si este es mayor o igual al valor indicado (45 y 135), si se cumple la condicion permite de nuevo realizar un avance recto como al principio.
     - **Diagrama de flujo:**
     - **Codigo de bloque:**
    ![Codigo de bloques Punto 3](./img/rotat_135.png)
@@ -86,7 +86,7 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
 ## Actividad 4:
  - ### Reto: 
     - **Objetivo:** Usar el sensor infrarrojo para realizar la siguiente lógica: Avance indeterminado en línea recta donde al detectar un obstáculo a Xcm de distancia se devuelva 10cm, gire 45° y siga su camino.
-    - **Solución planteada:**
+    - **Solución planteada:** Se programa un bucle para evaluar el estado del receptor infrarrojo mientras el robot avanza en linea recta, cuando se cumple la condicion de distancia se da reversa al robot y se le da giro. Al terminar se le da un avance final en linea recta.               
     - **Diagrama de flujo:**
     - **Codigo de bloque:**
     - 
@@ -97,7 +97,7 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
 ## Actividad 5:
  - ### Reto: 
     - **Objetivo:** Usar el sensor de contacto para realizar la siguiente lógica: Avance indeterminado en línea recta donde al detectar un obstáculo a Xcm de distancia se devuelva 10cm (distancia dada por otro sensor), gire 45° y siga su camino.
-    - **Solución planteada:**
+    - **Solución planteada:** Se programa un bucle para que el robot avance mientras se evalua la condicion del sensor de contacto. Cuando se cumple dicha condicion, se da reversa al robot y se le da giro de 90°. Al terminar se regresa al inicio del programa y vuelve a comenzar.
     - **Diagrama de flujo:**
     - **Codigo de bloque:**
       
