@@ -57,8 +57,22 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
 ## Actividad 2:
   - ### Reto 1:
     - **Objetivo:** Mover las ruedas a distintas velocidades en ambas direcciones. La diferencia se dará en que una rueda se moverá en las siguientes proporciones con respecto a la otra: 1/2, 1/3 y 1/4. 
-    - **Solución planteada:** Se condiciona la velocidad de las ruedas independientemente, se ejecuta el programa y se mide el radio de giro correspondiente.
+    - **Solución planteada:** La distancia que debe recorrer cada rueda en un tiempo dado depende de la velocidad que esta lleva, por lo que la relación que existe entre el radio que posee la rueda interna y la externa son linealmente dependientes:
+
+     ![Codigo de bloques Punto 2](./img/Actividad_2/relacion_de_giro.png)
+   
+   Al calcular el radio sobre el cual debe girar larueda interna se encuentra la siguiente relación:
+   r=T/(n-1)
+
+   Si las ruedas giran a la misma velocidad, el radio de giro es infinito, el vehiculo avanza en linea recta
+
+   - Para el caso de una velocidad del externo de 2 veces el interno el radio de giro es de 1 trocha.
+   - Para el caso de una velocidad del externo de 3 veces el interno el radio de giro es de media trocha.
+   - Para el caso de una velocidad del externo de 4 veces el interno el radio de giro es de un cuarto de trocha.
+
+   Se condiciona la velocidad de las ruedas independientemente, se ejecuta el programa y se mide el radio de giro correspondiente.
     - **Diagrama de flujo:**
+   
     - **Codigo de bloque:**
      ![Codigo de bloques Punto 2](./img/2.png)
   
