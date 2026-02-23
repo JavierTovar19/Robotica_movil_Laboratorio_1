@@ -36,6 +36,12 @@
     - **Pista:**
     - **Imagenes:**
     - **Codigo de bloque:**
+   ![Codigo de bloques Punto 3](./img/rotat_135.png)
+
+   Para la realización de la S:
+
+   ![Codigo de bloques Punto 3 - S](./img/s.png)
+   
     - **Resultados:**
  - ### Reto 4: 
     - **Objetivo:**
@@ -44,6 +50,7 @@
     - **Pista:**
     - **Imagenes:**
     - **Codigo de bloque:**
+   ![Codigo de bloques Punto 4](./img/infrarrojo_90.png)
     - **Resultados:**
  - ### Reto 5: 
     - **Objetivo:**
@@ -52,9 +59,9 @@
     - **Pista:**
     - **Imagenes:**
     - **Codigo de bloque:**
+   ![Codigo de bloques Punto 5](./img/contacto_90.png)
     - **Resultados:**
- - ### Reto 6: 
-    - **Objetivo:**
+
     - **Solución planteada:**
     - **Diagrama de flujo:**
     - **Pista:**
