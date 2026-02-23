@@ -1,8 +1,18 @@
 # Robotica_movil_Laboratorio_1
 
+## Integrantes
+  -
+  - David Felipe Ruiz Reyes
+  -
+ 
 ## Introducción
 
+En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran relevancia. Por ello, es vital el reconocimiento de las siguientes características que llegan a tener por ejemplo el Lego EV3 utilizado en este laboratorio, como: el comportamiento del movimiento en llantas, el comportamiento de los sensores junto a sus formas de comunicación y el uso de una lógica de una programación asertiva, correspondiente a la mecánica/electrónica del robot.
+
 ## Objetivos
+
+ - Realizar las actividades propuestas utilizando el robot LEGO EV3 y el software LEGO MINDSTORMS Education EV3 para el reconocimiento de los requerimientos de ingeniería en robots móviles desde una vista práctica.
+ - Reconocer las características y la lógica que utilizan los sensores, actuadores y comunicaciones del Robot Lego EV3.
 
 ## Retos
 
@@ -40,7 +50,7 @@
 
    Para la realización de la S:
 
-   ![Codigo de bloques Punto 3 - S](./img/s.png)
+    ![Codigo de bloques Punto 3 - S](./img/s.png)
    
     - **Resultados:**
  - ### Reto 4: 
@@ -50,7 +60,9 @@
     - **Pista:**
     - **Imagenes:**
     - **Codigo de bloque:**
+    - 
    ![Codigo de bloques Punto 4](./img/infrarrojo_90.png)
+
     - **Resultados:**
  - ### Reto 5: 
     - **Objetivo:**
@@ -59,7 +71,9 @@
     - **Pista:**
     - **Imagenes:**
     - **Codigo de bloque:**
+      
    ![Codigo de bloques Punto 5](./img/contacto_90.png)
+   
     - **Resultados:**
 
     - **Solución planteada:**
