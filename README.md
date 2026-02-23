@@ -67,6 +67,9 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Solución planteada:** Se realiza un bucle y una interrupción, en donde para las "i primeras revoluciones" se tenga un motor con menos potencia generando el giro y despues al superar esas i revoluciones
     se inviertan las potencias de los motores, generando el giro inverso. El bucle acaba despues de n revoluciones.
     - **Diagrama de flujo:**
+   
+    ![Diagrama de flujo Punto 2-S](./img/FlujoS.png)
+
     - **Codigo de bloque:**
       ![Codigo de bloques Punto 2 - S](./img/s.png)
   
