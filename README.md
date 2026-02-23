@@ -43,17 +43,17 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
 
  - ### Reto 3: 
     - **Objetivo:** Usar el sensor ultrasónico para detener un movimiento de línea recta cuando se detecte un obstáculo a 10cm de distancia.
-    - **Solución planteada:**
+    - **Solución planteada:** Dentro de un ciclo while se evalua la condicion del sensor de distancia ultrasónico y se ordena la parada cuando se cumpla.
     - **Diagrama de flujo:** El diagrama de flujo, es simplemente un ciclo con una condicion de parada.
     - **Codigo de bloques:**
-    - **Resultados:** Diferencias entre medición del sensor y el flexómetro a dos potencias distintas:
+    - **Resultados:** Diferencias entre medición del sensor y el flexómetro a dos distancias distintas:
       (REAL=9cm y sensor=9,5cm Potencia=10) (REAL=7cm y sensor=6,7cm Potencia=50)
 
   
 ## Actividad 2:
   - ### Reto 1:
-    - **Objetivo:** Mover las ruedas a distintas velocidades. La diferencia se dará en que una rueda se moverá en las siguientes proporciones con respecto a la otra: 1/2 y 1/3. 
-    - **Solución planteada:**
+    - **Objetivo:** Mover las ruedas a distintas velocidades en ambas direcciones. La diferencia se dará en que una rueda se moverá en las siguientes proporciones con respecto a la otra: 1/2 y 1/3. 
+    - **Solución planteada:** Se condiciona la velocidad de las ruedas independientemente, se ejecuta el programa y se mide el radio de giro correspondiente.
     - **Diagrama de flujo:**
     - **Codigo de bloque:**
      ![Codigo de bloques Punto 2](./img/2.png)
