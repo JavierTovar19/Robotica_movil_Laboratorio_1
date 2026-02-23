@@ -35,7 +35,9 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Solución planteada:**
     Para resolver el reto planteado, se implementa un codigo que realiza un avance constante dentro de un bucle, el cual evalua el numero de revoluciones de las ruedas y se detiene cuando alcanza o supera las 8 revoluciones * Se añade una pausa al inicio para poder colocar el robot en la posicion deseada y que este pueda avanzar en linea recta *.
     - **Diagrama de flujo:** El diagrama de flujo, es simplemente un ciclo con una condicion de parada.
+      
     ![Diagrama de flujo Punto 1](./img/flujo_2.png)
+   
     - **Codigo de bloques:**
     ![Codigo de bloques Punto 1](./img/bloques_2.png)
    
@@ -77,6 +79,9 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Objetivo:** Usar el girosensor para generar un movimiento en línea recta que en cierto momento cambie su dirección en 45 y 135 grados. 
     - **Solución planteada:** Se programa el robot para que avance tres revoluciones inicialmente, luego dentro de un bucle se da giro y se evalua si este es mayor o igual al valor indicado (45 y 135), si se cumple la condicion permite de nuevo realizar un avance recto como al principio.
     - **Diagrama de flujo:**
+   
+    ![Diagrama de flujo Punto 3](./img/FlujoAct3.png)
+
     - **Codigo de bloque:**
    ![Codigo de bloques Punto 3](./img/rotat_135.png)
    
