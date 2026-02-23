@@ -101,7 +101,7 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Diagrama de flujo:**
     - **Codigo de bloque:**
       
-   ![Codigo de bloques Punto 5](./img/contacto_90.png)
+   ![Codigo de bloques Punto 5](./img/infrarrojo_90.png)
    
     - **Resultados:**
 
