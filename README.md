@@ -27,11 +27,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     ![Diagrama de flujo Punto 1](./img/flujo_1.png)
     - **Codigo de bloques:**
     ![Codigo de bloques Punto 1](./img/bloques_1.png)
-    - **Resultados:**
+    - **Resultados:** Dadas las condiciones del MRU, podemos entender que la distancia recorrida será proporcional al tiempo y ello se observa en la escala de distancia obtenida al escalar el tiempo.
   
       
  - ### Reto 2: 
-    - **Objetivo:** Usar el encoder de los motores para contar las revoluciones de las ruedas y avanzar en linea recta hasta completar 8 revoluciones. Aparte, se debe generar una trayectoria en forma de S.
+    - **Objetivo:** Usar el encoder de los motores para contar las revoluciones de las ruedas y avanzar en linea recta hasta completar 8 revoluciones. 
     - **Solución planteada:**
     Para resolver el reto planteado, se implementa un codigo que realiza un avance constante dentro de un bucle, el cual evalua el numero de revoluciones de las ruedas y se detiene cuando alcanza o supera las 8 revoluciones * Se añade una pausa al inicio para poder colocar el robot en la posicion deseada y que este pueda avanzar en linea recta *.
     - **Diagrama de flujo:** El diagrama de flujo, es simplemente un ciclo con una condicion de parada.
@@ -41,26 +41,25 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Codigo de bloques:**
     ![Codigo de bloques Punto 1](./img/bloques_2.png)
    
-    - **Resultados:** 2 * pi * 8rev * 28mm_radio = 1,4 metros de avance. 
+    - **Resultados:** 2 * pi * 8rev * 28mm_radio = 1,4 metros de avance. En la realidad se obtuvo un acercamiento importante a este valor teórico, esto gracias a la tecnologia de visualización/conteo de pulsos     magneticos obtenidos desde encoder que permiten conocer las revoluciones dadas.
 
  - ### Reto 3: 
     - **Objetivo:** Usar el sensor ultrasónico para detener un movimiento de línea recta cuando se detecte un obstáculo a 10cm de distancia.
     - **Solución planteada:** Dentro de un ciclo while se evalua la condicion del sensor de distancia ultrasónico y se ordena la parada cuando se cumpla.
     - **Diagrama de flujo:** El diagrama de flujo, es simplemente un ciclo con una condicion de parada.
     - **Codigo de bloques:**
-    - **Resultados:** Diferencias entre medición del sensor y el flexómetro a dos distancias distintas:
-      (REAL=9cm y sensor=9,5cm Potencia=10) (REAL=7cm y sensor=6,7cm Potencia=50)
+    - **Resultados:** Diferencias entre medición del sensor y el flexómetro a dos distancias distintas: (REAL=9cm y sensor=9,5cm Potencia=10) (REAL=7cm y sensor=6,7cm Potencia=50). Como se observa, el sensor siempre tendrá una incertidumbre importante y más cuando no se tiene un control directo sobre la inercia del vehículo.
 
   
 ## Actividad 2:
   - ### Reto 1:
-    - **Objetivo:** Mover las ruedas a distintas velocidades en ambas direcciones. La diferencia se dará en que una rueda se moverá en las siguientes proporciones con respecto a la otra: 1/2 y 1/3. 
+    - **Objetivo:** Mover las ruedas a distintas velocidades en ambas direcciones. La diferencia se dará en que una rueda se moverá en las siguientes proporciones con respecto a la otra: 1/2, 1/3 y 1/4. 
     - **Solución planteada:** Se condiciona la velocidad de las ruedas independientemente, se ejecuta el programa y se mide el radio de giro correspondiente.
     - **Diagrama de flujo:**
     - **Codigo de bloque:**
      ![Codigo de bloques Punto 2](./img/2.png)
   
-  - **Resultados:**
+  - **Resultados:** Como se observa en las imagenes y videos del comportamiento del robot móvil en este reto, la trocha (distancia entre chantas de dirección) será la constante que determina el reccorido rotacional. Teniendo en cuenta que el ancho de la rueda es de 3cm y la trocha de _____. Se obtuvieron los siguientes resultados respectivamente (Potencia=P): Para 1/2P [22 a 21]cm, para 1/3P [6,5 a 7]cm y 1/4P [3,5 a 4]cm
     
   - ### Reto 2:
     - **Objetivo:** Crear una trayectoria en forma de S
@@ -73,7 +72,7 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Codigo de bloque:**
       ![Codigo de bloques Punto 2 - S](./img/s.png)
   
-  - **Resultados:**
+  - **Resultados:** Se lograron distintas S, dadas por la relación velocidad/potencia y la proporción con la trocha manejada.
 
 
 
@@ -88,7 +87,7 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Codigo de bloque:**
    ![Codigo de bloques Punto 3](./img/rotat_135.png)
    
-  - **Resultados:**
+  - **Resultados:** Al igual que el ultrasonido, el sensor puede tener tanto incertidumbre en su repetibilidad como en su exactitud. Aún así, el comportamiento de modificar fuertemente la dirección del robot fue fácilmente dado. Se obtuvieron los siguientes ángulos finales, para el caso de 45° a media potencia: 52°. Y para el caso de 135° a baja potencia: 135°. (Vuelve el tema de inercia y control de frenado/amortiguación)
 
 
 ## Actividad 4:
@@ -103,7 +102,8 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - 
    ![Codigo de bloques Punto 4](./img/infrarrojo_90.png)
 
-    - **Resultados:**
+    - **Resultados:** Aquí también se observo la necesidad de un control sobre las inercias y el ampliar la lógica a comportamientos más complejos que el MRU. Esto debido a que elementos como frecuencia o delay en la comunicación pueden llevar a que el robot choque incluso cuando el sensor realizo correctamente su trabajo. Ahora también, los sensores tienen una forma "individual" de entregar la información y por ello es importante contrastar que se tiene en la realidad y que es lo medido (calibrar). En el caso de este sensor se tenía lo siguiente: 7cm era 10unidades en el sensor y 10cm era 22unidades en el sensor. Con estos valores pueden entrar preguntas como: ¿Cuál es la zona lineal del sensor?, ¿Cuál es el rango del sensor?
+
 
 ## Actividad 5:
  - ### Reto: 
@@ -117,6 +117,6 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
       
    ![Codigo de bloques Punto 5](./img/infrarrojo_90.png)
    
-    - **Resultados:**
-
+    - **Resultados:** El sensor de contacto llega como una solución simple y rápida justamente para sistemas robótizados que no poseen una visión de máquina más compleja o necesitan un mejor control en el movimiento.
+ 
 
