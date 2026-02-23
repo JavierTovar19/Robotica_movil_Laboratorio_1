@@ -88,6 +88,9 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Objetivo:** Usar el sensor infrarrojo para realizar la siguiente lógica: Avance indeterminado en línea recta donde al detectar un obstáculo a Xcm de distancia se devuelva 10cm, gire 45° y siga su camino.
     - **Solución planteada:** Se programa un bucle para evaluar el estado del receptor infrarrojo mientras el robot avanza en linea recta, cuando se cumple la condicion de distancia se da reversa al robot y se le da giro. Al terminar se le da un avance final en linea recta.               
     - **Diagrama de flujo:**
+      
+   ![Diagrama de flujo Punto 4](./img/FlujoAct4.png)
+
     - **Codigo de bloque:**
     - 
    ![Codigo de bloques Punto 4](./img/infrarrojo_90.png)
@@ -99,11 +102,13 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Objetivo:** Usar el sensor de contacto para realizar la siguiente lógica: Avance indeterminado en línea recta donde al detectar un obstáculo a Xcm de distancia se devuelva 10cm (distancia dada por otro sensor), gire 45° y siga su camino.
     - **Solución planteada:** Se programa un bucle para que el robot avance mientras se evalua la condicion del sensor de contacto. Cuando se cumple dicha condicion, se da reversa al robot y se le da giro de 90°. Al terminar se regresa al inicio del programa y vuelve a comenzar.
     - **Diagrama de flujo:**
+
+     ![Diagrama de flujo Punto 5](./img/FlujoAct5.png)
+
     - **Codigo de bloque:**
       
    ![Codigo de bloques Punto 5](./img/infrarrojo_90.png)
    
     - **Resultados:**
 
-    - **Codigo de bloque:**
-    - **Resultados:**
+
