@@ -68,7 +68,7 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
 
    - Para el caso de una velocidad del externo de 2 veces el interno el radio de giro es de 1 trocha.
    - Para el caso de una velocidad del externo de 3 veces el interno el radio de giro es de media trocha.
-   - Para el caso de una velocidad del externo de 4 veces el interno el radio de giro es de un cuarto de trocha.
+   - Para el caso de una velocidad del externo de 4 veces el interno el radio de giro es de un tercio de trocha.
 
    Se condiciona la velocidad de las ruedas independientemente, se ejecuta el programa y se mide el radio de giro correspondiente.
 
@@ -77,7 +77,7 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     ![Codigo de bloques Punto 2](./img/Actividad_2/flujos_giro.png)
   - **Codigo de bloque:**
 
-    ![Codigo de bloques Punto 2](./img/Actividad_2/giro_2_1.png)
+    ![Codigo de bloques Punto 2](./img/Actividad_2/Giro_2_1.png)
   
   - **Resultados:** Como se observa en las imagenes y videos del comportamiento del robot móvil en este reto, la trocha (distancia entre chantas de dirección) será la constante que determina el reccorido rotacional. Teniendo en cuenta que el ancho de la rueda es de 3cm y la trocha de 12cm. Se obtuvieron los siguientes resultados en el radio de giro (Potencia=P): 
     - Para la relación de 1/2: [11 a 10]cm
@@ -90,11 +90,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     se inviertan las potencias de los motores, generando el giro inverso. El bucle acaba despues de n revoluciones.
     - **Diagrama de flujo:**
    
-      ![Diagrama de flujo Punto 2-S](./img/actividad_2/flujoS.png)
+      ![Diagrama de flujo Punto 2-S](./img/Actividad_2/FlujoS.png)
 
     - **Codigo de bloque:**
 
-      ![Codigo de bloques Punto 2 - S](./img/actividad_2/s.png)
+      ![Codigo de bloques Punto 2 - S](./img/Actividad_2/s.png)
   
   - **Resultados:** Se lograron distintas S, dadas poSr la relación velocidad/potencia y la proporción con la trocha manejada.
 
@@ -106,11 +106,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Solución planteada:** Se programa el robot para que avance 3 revoluciones inicialmente, luego dentro de un bucle se da giro y se evalua si este es mayor o igual al valor indicado (45), si se cumple la condicion permite de nuevo realizar un avance recto como al principio.
     - **Diagrama de flujo:**
    
-      ![Diagrama de flujo Punto 3](./img/actividad_3/FlujoAct3.png)
+      ![Diagrama de flujo Punto 3](./img/Actividad_3/FlujoAct3.png)
 
     - **Codigo de bloque:**
 
-      ![Codigo de bloques Punto 3](./img/actividad_3/bloques_45.png)
+      ![Codigo de bloques Punto 3](./img/Actividad_3/bloques_45.png)
    
   - **Resultados:** El girosensor puede tener tanto incertidumbre en su repetibilidad como en su exactitud. Aún así, el comportamiento de modificar fuertemente la dirección del robot fue fácilmente dado. Se obtuvieron los siguientes ángulos finales, para el caso de 45° a media potencia: 52°. (Vuelve el tema de inercia y control de frenado/amortiguación), por lo cual la potencia debe ser menor a la de avance, con esto se consigue un mejor control del giro.
 
@@ -119,11 +119,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Solución planteada:** Se programa el robot para que avance tres revoluciones inicialmente, luego dentro de un bucle se da giro y se evalua si este es mayor o igual al valor indicado (135°), si se cumple la condicion permite de nuevo realizar un avance recto como al principio.
     - **Diagrama de flujo:**
    
-      ![Diagrama de flujo Punto 3](./img/actividad_3/FlujoAct3.png)
+      ![Diagrama de flujo Punto 3](./img/Actividad_3/FlujoAct3.png)
 
     - **Codigo de bloque:**
 
-      ![Codigo de bloques Punto 3](./img/actividad_3/bloques_135.png)
+      ![Codigo de bloques Punto 3](./img/Actividad_3/bloques_135.png)
    
   - **Resultados:** Al igual que el ultrasonido, el sensor puede tener tanto incertidumbre en su repetibilidad como en su exactitud. Aún así, el comportamiento de modificar fuertemente la dirección del robot fue fácilmente dado. Se obtuvieron los siguientes ángulos finales, para el caso de 135° a baja potencia: 135°.(Vuelve el tema de inercia y control de frenado/amortiguación)
 
