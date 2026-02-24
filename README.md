@@ -71,12 +71,18 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
    - Para el caso de una velocidad del externo de 4 veces el interno el radio de giro es de un cuarto de trocha.
 
    Se condiciona la velocidad de las ruedas independientemente, se ejecuta el programa y se mide el radio de giro correspondiente.
-    - **Diagrama de flujo:**
-   
-    - **Codigo de bloque:**
-     ![Codigo de bloques Punto 2](./img/2.png)
+
+  - **Diagrama de flujo:**
   
-  - **Resultados:** Como se observa en las imagenes y videos del comportamiento del robot móvil en este reto, la trocha (distancia entre chantas de dirección) será la constante que determina el reccorido rotacional. Teniendo en cuenta que el ancho de la rueda es de 3cm y la trocha de _____. Se obtuvieron los siguientes resultados respectivamente (Potencia=P): Para 1/2P [22 a 21]cm, para 1/3P [6,5 a 7]cm y 1/4P [3,5 a 4]cm
+    ![Codigo de bloques Punto 2](./img/Actividad_2/flujos_giro.png)
+  - **Codigo de bloque:**
+
+    ![Codigo de bloques Punto 2](./img/Actividad_2/giro_2_1.png)
+  
+  - **Resultados:** Como se observa en las imagenes y videos del comportamiento del robot móvil en este reto, la trocha (distancia entre chantas de dirección) será la constante que determina el reccorido rotacional. Teniendo en cuenta que el ancho de la rueda es de 3cm y la trocha de 12cm. Se obtuvieron los siguientes resultados en el radio de giro (Potencia=P): 
+    - Para la relación de 1/2: [11 a 10]cm
+    - Para la relación de 1/3: [6 a 5]cm
+    - Para la relación de 1/4: [4 a 3]cm
     
   - ### Reto 2:
     - **Objetivo:** Crear una trayectoria en forma de S
@@ -84,27 +90,42 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     se inviertan las potencias de los motores, generando el giro inverso. El bucle acaba despues de n revoluciones.
     - **Diagrama de flujo:**
    
-    ![Diagrama de flujo Punto 2-S](./img/FlujoS.png)
+      ![Diagrama de flujo Punto 2-S](./img/actividad_2/flujoS.png)
 
     - **Codigo de bloque:**
-      ![Codigo de bloques Punto 2 - S](./img/s.png)
+
+      ![Codigo de bloques Punto 2 - S](./img/actividad_2/s.png)
   
-  - **Resultados:** Se lograron distintas S, dadas por la relación velocidad/potencia y la proporción con la trocha manejada.
+  - **Resultados:** Se lograron distintas S, dadas poSr la relación velocidad/potencia y la proporción con la trocha manejada.
 
 
 
 ## Actividad 3:
-  - ### Reto:
-    - **Objetivo:** Usar el girosensor para generar un movimiento en línea recta que en cierto momento cambie su dirección en 45 y 135 grados. 
-    - **Solución planteada:** Se programa el robot para que avance tres revoluciones inicialmente, luego dentro de un bucle se da giro y se evalua si este es mayor o igual al valor indicado (45 y 135), si se cumple la condicion permite de nuevo realizar un avance recto como al principio.
+  - ### Reto 1:
+    - **Objetivo:** Usar el girosensor para generar un movimiento en línea recta que en cierto momento cambie su dirección en 45°. 
+    - **Solución planteada:** Se programa el robot para que avance 3 revoluciones inicialmente, luego dentro de un bucle se da giro y se evalua si este es mayor o igual al valor indicado (45), si se cumple la condicion permite de nuevo realizar un avance recto como al principio.
     - **Diagrama de flujo:**
    
-    ![Diagrama de flujo Punto 3](./img/FlujoAct3.png)
+      ![Diagrama de flujo Punto 3](./img/actividad_3/FlujoAct3.png)
 
     - **Codigo de bloque:**
-   ![Codigo de bloques Punto 3](./img/rotat_135.png)
+
+      ![Codigo de bloques Punto 3](./img/actividad_3/bloques_45.png)
    
-  - **Resultados:** Al igual que el ultrasonido, el sensor puede tener tanto incertidumbre en su repetibilidad como en su exactitud. Aún así, el comportamiento de modificar fuertemente la dirección del robot fue fácilmente dado. Se obtuvieron los siguientes ángulos finales, para el caso de 45° a media potencia: 52°. Y para el caso de 135° a baja potencia: 135°. (Vuelve el tema de inercia y control de frenado/amortiguación)
+  - **Resultados:** El girosensor puede tener tanto incertidumbre en su repetibilidad como en su exactitud. Aún así, el comportamiento de modificar fuertemente la dirección del robot fue fácilmente dado. Se obtuvieron los siguientes ángulos finales, para el caso de 45° a media potencia: 52°. (Vuelve el tema de inercia y control de frenado/amortiguación), por lo cual la potencia debe ser menor a la de avance, con esto se consigue un mejor control del giro.
+
+  - ### Reto 2:
+    - **Objetivo:** Usar el girosensor para generar un movimiento en línea recta que en cierto momento cambie su dirección en 135°.
+    - **Solución planteada:** Se programa el robot para que avance tres revoluciones inicialmente, luego dentro de un bucle se da giro y se evalua si este es mayor o igual al valor indicado (135°), si se cumple la condicion permite de nuevo realizar un avance recto como al principio.
+    - **Diagrama de flujo:**
+   
+      ![Diagrama de flujo Punto 3](./img/actividad_3/FlujoAct3.png)
+
+    - **Codigo de bloque:**
+
+      ![Codigo de bloques Punto 3](./img/actividad_3/bloques_135.png)
+   
+  - **Resultados:** Al igual que el ultrasonido, el sensor puede tener tanto incertidumbre en su repetibilidad como en su exactitud. Aún así, el comportamiento de modificar fuertemente la dirección del robot fue fácilmente dado. Se obtuvieron los siguientes ángulos finales, para el caso de 135° a baja potencia: 135°.(Vuelve el tema de inercia y control de frenado/amortiguación)
 
 
 ## Actividad 4:
@@ -113,11 +134,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Solución planteada:** Se programa un bucle para evaluar el estado del receptor infrarrojo mientras el robot avanza en linea recta, cuando se cumple la condicion de distancia se da reversa al robot y se le da giro. Al terminar se le da un avance final en linea recta.               
     - **Diagrama de flujo:**
       
-   ![Diagrama de flujo Punto 4](./img/FlujoAct4.png)
+      ![Diagrama de flujo Punto 4](./img/Actividad_4/FlujoAct4.png)
 
     - **Codigo de bloque:**
-    - 
-   ![Codigo de bloques Punto 4](./img/infrarrojo_90.png)
+
+      ![Codigo de bloques Punto 4](./img/Actividad_4/bloques_infrarojo_giro.png)
 
     - **Resultados:** Aquí también se observo la necesidad de un control sobre las inercias y el ampliar la lógica a comportamientos más complejos que el MRU. Esto debido a que elementos como frecuencia o delay en la comunicación pueden llevar a que el robot choque incluso cuando el sensor realizo correctamente su trabajo. Ahora también, los sensores tienen una forma "individual" de entregar la información y por ello es importante contrastar que se tiene en la realidad y que es lo medido (calibrar). En el caso de este sensor se tenía lo siguiente: 7cm era 10unidades en el sensor y 10cm era 22unidades en el sensor. Con estos valores pueden entrar preguntas como: ¿Cuál es la zona lineal del sensor?, ¿Cuál es el rango del sensor?
 
@@ -128,12 +149,12 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Solución planteada:** Se programa un bucle para que el robot avance mientras se evalua la condicion del sensor de contacto. Cuando se cumple dicha condicion, se da reversa al robot y se le da giro de 90°. Al terminar se regresa al inicio del programa y vuelve a comenzar.
     - **Diagrama de flujo:**
 
-     ![Diagrama de flujo Punto 5](./img/FlujoAct5.png)
+     ![Diagrama de flujo Punto 5](./img/Actividad_5/FlujoAct5.png)
 
     - **Codigo de bloque:**
       
-   ![Codigo de bloques Punto 5](./img/infrarrojo_90.png)
+   ![Codigo de bloques Punto 5](./img/Actividad_5/Bloques_contacto_90.png)
    
-    - **Resultados:** El sensor de contacto llega como una solución simple y rápida justamente para sistemas robótizados que no poseen una visión de máquina más compleja o necesitan un mejor control en el movimiento.
+    - **Resultados:** El sensor de contacto, al igual que el infrarrojo, permite una interacción con el entorno, pero a diferencia del infrarrojo, este no mide distancias, sino que detecta el contacto físico con un objeto. Esto lo hace ideal para tareas donde se requiere una respuesta inmediata al contacto, como en sistemas de seguridad o de manipulación, la potencia excesiva y la falta de control de frenado generan que el robot se desplace hasta derribar el obstaculo, en este sentido, el avance debe ser mas lento que en el caso del infrarrojo.
  
 
