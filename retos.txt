@@ -1,0 +1,18 @@
+Laboratorio 1 de robótica móvil
+
+Movimiento en línea recta:
+Movimiento por tiempo con tiempos variables, verificar linealidad de velocidad.
+Revisar el encoder, contar 8 vueltas por el encoderT
+
+
+Con el ultrasonido, realizar una medición de distancia, if d<10: pare, detenerse absolutamente.
+Movimiento diferencial:
+1 rueda a la mitad de la velocidad de la otra, que movimiento debe hacer?
+girar en forma de s, velocidad de ⅓, ¼ 
+Girosensor:
+avanzar->girar 45°->avanzar
+avanzar->girar 135°->avanzar
+Infrarrojo:
+avanza en línea recta-> d<5 -> Retrocede 10cm -> rotar 90°
+contacto:
+avanza en línea recta-> d<5 -> Retrocede 10cm -> rotar 90°
