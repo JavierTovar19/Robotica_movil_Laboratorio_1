@@ -24,9 +24,13 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     Para resolver el reto planteado, se implementa un codigo que realiza un avance por dos segundos, luego se detiene y regresa por dos segundos, despues de esto se repite el proceso con un avance de 4 segundos.
     - **Diagrama de flujo:**
     El flujo del programa se plantea de forma secuencial, en la siguiente imagen:
-    ![Diagrama de flujo Punto 1](./img/Actividad_1/flujo_1.png)
+    
+        <img src="./img/Actividad_1/flujo_1.png" alt="Diagrama de flujo Punto 1" width="300">
+    
     - **Codigo de bloques:**
-    ![Codigo de bloques Punto 1](./img/Actividad_1/bloques_1.png)
+    
+        <img src="./img/Actividad_1/bloques_1.png" alt="Codigo de bloques Punto 1" width="300">
+    
     - **Resultados:** Dadas las condiciones del MRU, podemos entender que la distancia recorrida será proporcional al tiempo y ello se observa en la escala de distancia obtenida al escalar el tiempo.
   
       
@@ -36,10 +40,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     Para resolver el reto planteado, se implementa un codigo que realiza un avance constante dentro de un bucle, el cual evalua el numero de revoluciones de las ruedas y se detiene cuando alcanza o supera las 8 revoluciones * Se añade una pausa al inicio para poder colocar el robot en la posicion deseada y que este pueda avanzar en linea recta *.
     - **Diagrama de flujo:** El diagrama de flujo, es simplemente un ciclo con una condicion de parada.
       
-    ![Diagrama de flujo Punto 2](./img/Actividad_1/flujo_2.png)
+        <img src="./img/Actividad_1/flujo_2.png" alt="Diagrama de flujo Punto 2" width="300">
    
     - **Codigo de bloques:**
-    ![Codigo de bloques Punto 2](./img/Actividad_1/bloques_2.png)
+    
+        <img src="./img/Actividad_1/bloques_2.png" alt="Codigo de bloques Punto 2" width="300">
    
     - **Resultados:** 2 * pi * 8rev * 28mm_radio = 1,4 metros de avance. En la realidad se obtuvo un acercamiento importante a este valor teórico, esto gracias a la tecnologia de visualización/conteo de pulsos     magneticos obtenidos desde encoder que permiten conocer las revoluciones dadas.
 
@@ -47,10 +52,13 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Objetivo:** Usar el sensor ultrasónico para detener un movimiento de línea recta cuando se detecte un obstáculo a 10cm de distancia.
     - **Solución planteada:** Dentro de un ciclo while se evalua la condicion del sensor de distancia ultrasónico y se ordena la parada cuando se cumpla.
     - **Diagrama de flujo:** El diagrama de flujo, es simplemente un ciclo con una condicion de parada.
-   ![Diagrama de flujo Punto 3](./img/Actividad_1/flujo_3_ultrasonido.png)
+   
+        <img src="./img/Actividad_1/flujo_3_ultrasonido.png" alt="Diagrama de flujo Punto 3" width="300">
 
     - **Codigo de bloques:**
-    ![Codigo de bloques Punto 2](./img/Actividad_1/bloques_3_ultrasonido.png)
+    
+        <img src="./img/Actividad_1/bloques_3_ultrasonido.png" alt="Codigo de bloques Punto 3" width="300">
+        
     - **Resultados:** El sistema está configurado para detener el vehículo cuando el sensor detecta una distancia menor a 10 cm; sin embargo, la detención no es instantánea debido a la inercia. Cuando el carro se mueve con baja potencia, su velocidad y energía cinética son menores, por lo que al activarse la señal de parada avanza muy poco adicionalmente y se detiene cerca de los 9–10 cm reales. En cambio, a mayor potencia el vehículo alcanza mayor velocidad y, por tanto, mayor inercia; aunque el sensor detecte los 10 cm y envíe la orden de detenerse, el carro continúa avanzando unos centímetros más antes de frenar por completo, terminando más cerca del obstáculo (aproximadamente 6,5–7 cm).
 
   
@@ -59,7 +67,7 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Objetivo:** Mover las ruedas a distintas velocidades en ambas direcciones. La diferencia se dará en que una rueda se moverá en las siguientes proporciones con respecto a la otra: 1/2, 1/3 y 1/4. 
     - **Solución planteada:** La distancia que debe recorrer cada rueda en un tiempo dado depende de la velocidad que esta lleva, por lo que la relación que existe entre el radio que posee la rueda interna y la externa son linealmente dependientes:
 
-     ![Codigo de bloques Punto 2](./img/Actividad_2/relacion_de_giro.png)
+        <img src="./img/Actividad_2/relacion_de_giro.png" alt="Relacion de giro" width="200">
    
    Al calcular el radio sobre el cual debe girar larueda interna se encuentra la siguiente relación:
    r=T/(n-1)
@@ -73,11 +81,12 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
    Se condiciona la velocidad de las ruedas independientemente, se ejecuta el programa y se mide el radio de giro correspondiente.
 
   - **Diagrama de flujo:**
-  
-    ![Codigo de bloques Punto 2](./img/Actividad_2/flujos_giro.png)
+
+    <img src="./img/Actividad_2/flujos_giro.png" alt="Diagrama de flujo Punto 2" width="300">
+    
   - **Codigo de bloque:**
 
-    ![Codigo de bloques Punto 2](./img/Actividad_2/Giro_2_1.png)
+    <img src="./img/Actividad_2/Giro_2_1.png" alt="Codigo de bloques Punto 2" width="600">
   
   - **Resultados:** Como se observa en las imagenes y videos del comportamiento del robot móvil en este reto, la trocha (distancia entre chantas de dirección) será la constante que determina el reccorido rotacional. Teniendo en cuenta que el ancho de la rueda es de 3cm y la trocha de 12cm. Se obtuvieron los siguientes resultados en el radio de giro (Potencia=P): 
     - Para la relación de 1/2: [11 a 10]cm
@@ -90,11 +99,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     se inviertan las potencias de los motores, generando el giro inverso. El bucle acaba despues de n revoluciones.
     - **Diagrama de flujo:**
    
-      ![Diagrama de flujo Punto 2-S](./img/Actividad_2/FlujoS.png)
+      <img src="./img/Actividad_2/FlujoS.png" alt="Diagrama de flujo Punto 2-S" width="300">
 
     - **Codigo de bloque:**
 
-      ![Codigo de bloques Punto 2 - S](./img/Actividad_2/s.png)
+      <img src="./img/Actividad_2/s.png" alt="Codigo de bloques Punto 2 - S" width="600">
   
   - **Resultados:** Se lograron distintas S, dadas poSr la relación velocidad/potencia y la proporción con la trocha manejada.
 
@@ -106,11 +115,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Solución planteada:** Se programa el robot para que avance 3 revoluciones inicialmente, luego dentro de un bucle se da giro y se evalua si este es mayor o igual al valor indicado (45), si se cumple la condicion permite de nuevo realizar un avance recto como al principio.
     - **Diagrama de flujo:**
    
-      ![Diagrama de flujo Punto 3](./img/Actividad_3/FlujoAct3.png)
+      <img src="./img/Actividad_3/FlujoAct3.png" alt="Diagrama de flujo Punto 3" width="300">
 
     - **Codigo de bloque:**
 
-      ![Codigo de bloques Punto 3](./img/Actividad_3/bloques_45.png)
+      <img src="./img/Actividad_3/bloques_45.png" alt="Codigo de bloques Punto 3" width="600">
    
   - **Resultados:** El girosensor puede tener tanto incertidumbre en su repetibilidad como en su exactitud. Aún así, el comportamiento de modificar fuertemente la dirección del robot fue fácilmente dado. Se obtuvieron los siguientes ángulos finales, para el caso de 45° a media potencia: 52°. (Vuelve el tema de inercia y control de frenado/amortiguación), por lo cual la potencia debe ser menor a la de avance, con esto se consigue un mejor control del giro.
 
@@ -118,12 +127,12 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Objetivo:** Usar el girosensor para generar un movimiento en línea recta que en cierto momento cambie su dirección en 135°.
     - **Solución planteada:** Se programa el robot para que avance tres revoluciones inicialmente, luego dentro de un bucle se da giro y se evalua si este es mayor o igual al valor indicado (135°), si se cumple la condicion permite de nuevo realizar un avance recto como al principio.
     - **Diagrama de flujo:**
-   
-      ![Diagrama de flujo Punto 3](./img/Actividad_3/FlujoAct3.png)
+
+        <img src="./img/Actividad_3/FlujoAct3.png" alt="Diagrama de flujo Punto 3" width="300">
 
     - **Codigo de bloque:**
 
-      ![Codigo de bloques Punto 3](./img/Actividad_3/bloques_135.png)
+      <img src="./img/Actividad_3/bloques_135.png" alt="Codigo de bloques Punto 3" width="600">
    
   - **Resultados:** Al igual que el ultrasonido, el sensor puede tener tanto incertidumbre en su repetibilidad como en su exactitud. Aún así, el comportamiento de modificar fuertemente la dirección del robot fue fácilmente dado. Se obtuvieron los siguientes ángulos finales, para el caso de 135° a baja potencia: 135°.(Vuelve el tema de inercia y control de frenado/amortiguación)
 
@@ -134,11 +143,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Solución planteada:** Se programa un bucle para evaluar el estado del receptor infrarrojo mientras el robot avanza en linea recta, cuando se cumple la condicion de distancia se da reversa al robot y se le da giro. Al terminar se le da un avance final en linea recta.               
     - **Diagrama de flujo:**
       
-      ![Diagrama de flujo Punto 4](./img/Actividad_4/FlujoAct4.png)
+      <img src="./img/Actividad_4/FlujoAct4.png" alt="Diagrama de flujo Punto 4" width="300">
 
     - **Codigo de bloque:**
 
-      ![Codigo de bloques Punto 4](./img/Actividad_4/bloques_infrarojo_giro.png)
+      <img src="./img/Actividad_4/bloques_infrarojo_giro.png" alt="Codigo de bloques Punto 4" width="500">
 
     - **Resultados:** Aquí también se observo la necesidad de un control sobre las inercias y el ampliar la lógica a comportamientos más complejos que el MRU. Esto debido a que elementos como frecuencia o delay en la comunicación pueden llevar a que el robot choque incluso cuando el sensor realizo correctamente su trabajo. Ahora también, los sensores tienen una forma "individual" de entregar la información y por ello es importante contrastar que se tiene en la realidad y que es lo medido (calibrar). En el caso de este sensor se tenía lo siguiente: 7cm era 10unidades en el sensor y 10cm era 22unidades en el sensor. Con estos valores pueden entrar preguntas como: ¿Cuál es la zona lineal del sensor?, ¿Cuál es el rango del sensor?
 
@@ -149,11 +158,11 @@ En el mundo de la robótica móvil, el uso de vehículos terrestres tiene gran r
     - **Solución planteada:** Se programa un bucle para que el robot avance mientras se evalua la condicion del sensor de contacto. Cuando se cumple dicha condicion, se da reversa al robot y se le da giro de 90°. Al terminar se regresa al inicio del programa y vuelve a comenzar.
     - **Diagrama de flujo:**
 
-     ![Diagrama de flujo Punto 5](./img/Actividad_5/FlujoAct5.png)
+     <img src="./img/Actividad_5/FlujoAct5.png" alt="Diagrama de flujo Punto 5" width="300">
 
     - **Codigo de bloque:**
       
-   ![Codigo de bloques Punto 5](./img/Actividad_5/Bloques_contacto_90.png)
+   <img src="./img/Actividad_5/Bloques_contacto_90.png" alt="Codigo de bloques Punto 5" width="600">
    
     - **Resultados:** El sensor de contacto, al igual que el infrarrojo, permite una interacción con el entorno, pero a diferencia del infrarrojo, este no mide distancias, sino que detecta el contacto físico con un objeto. Esto lo hace ideal para tareas donde se requiere una respuesta inmediata al contacto, como en sistemas de seguridad o de manipulación, la potencia excesiva y la falta de control de frenado generan que el robot se desplace hasta derribar el obstaculo, en este sentido, el avance debe ser mas lento que en el caso del infrarrojo.
  
