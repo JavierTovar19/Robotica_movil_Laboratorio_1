@@ -11,6 +11,7 @@
     - **Solución planteada:**
     Para resolver el reto planteado, se implementa un codigo que realiza un avance por dos segundos, luego se detiene y regresa por dos segundos, despues de esto se repite el proceso con un avance de 4 segundos.
     - **Diagrama de flujo:**
+    
     ![Diagrama de flujo](./img/imagen.jpeg)
     - **Pista:**
     - **Imagenes:**
